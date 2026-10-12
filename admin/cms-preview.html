@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohasib CMS Manager | Edit Website Content</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    h1, h2, h3, h4 { font-family: 'Plus Jakarta Sans', sans-serif; }
+  </style>
+</head>
+<body class="bg-slate-100 text-slate-800 min-h-screen">
+
+  <!-- Header -->
+  <header class="bg-slate-900 text-white border-b border-slate-800 sticky top-0 z-30">
+    <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-8 h-8 rounded-lg bg-emerald-600 flex items-center justify-center font-bold text-white text-sm">M</div>
+        <div>
+          <h1 class="text-base font-bold">Mohasib Financial Group • Content CMS Manager</h1>
+          <p class="text-[0.68rem] text-slate-400">Edit content.json visually without touching code</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-3">
+        <a href="../index.html" target="_blank" class="text-xs bg-slate-800 hover:bg-slate-700 text-white px-3.5 py-2 rounded-lg font-medium transition-colors flex items-center gap-1.5">
+          <span>View Live Site</span>
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+        </a>
+        <button onclick="downloadJsonFile()" class="text-xs bg-emerald-600 hover:bg-emerald-500 text-white px-4 py-2 rounded-lg font-bold shadow-md transition-all flex items-center gap-1.5">
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+          <span>Export content.json</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-6 py-8">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+      
+      <!-- Left Form Panels -->
+      <div class="lg:col-span-7 space-y-6">
+        
+        <!-- Tab Navigation -->
+        <div class="bg-white p-2 rounded-2xl shadow-sm border border-slate-200 flex flex-wrap gap-2 text-xs font-bold">
+          <button onclick="switchTab('company')" id="tab-btn-company" class="tab-btn active px-4 py-2 rounded-xl bg-emerald-600 text-white">Company Profile</button>
+          <button onclick="switchTab('hero')" id="tab-btn-hero" class="tab-btn px-4 py-2 rounded-xl bg-slate-100 text-slate-700 hover:bg-slate-200">Hero &amp; Stats</button>
+          <button onclick="switchTab('services')" id="tab-btn-services" class="tab-btn px-4 py-2 rounded-xl bg-slate-100 text-slate-700 hover:bg-slate-200">Services</button>
+          <button onclick="switchTab('pricing')" id="tab-btn-pricing" class="tab-btn px-4 py-2 rounded-xl bg-slate-100 text-slate-700 hover:bg-slate-200">Pricing</button>
+          <button onclick="switchTab('faqs')" id="tab-btn-faqs" class="tab-btn px-4 py-2 rounded-xl bg-slate-100 text-slate-700 hover:bg-slate-200">FAQs</button>
+        </div>
+
+        <!-- 1. Company Profile Tab -->
+        <div id="tab-company" class="tab-content bg-white p-6 rounded-2xl shadow-sm border border-slate-200 space-y-4">
+          <h2 class="text-base font-bold text-slate-900 border-b pb-2">Business Profile &amp; Contact Info</h2>
+          
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Company Legal Name</label>
+            <input type="text" id="inp-comp-name" class="w-full border rounded-lg px-3 py-2 text-xs" oninput="updateLiveState()">
+          </div>
+
+          <div class="grid grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1">Display Telephone</label>
+              <input type="text" id="inp-comp-phone" class="w-full border rounded-lg px-3 py-2 text-xs" oninput="updateLiveState()">
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1">Raw Tel URL (tel:+...)</label>
+              <input type="text" id="inp-comp-rawphone" class="w-full border rounded-lg px-3 py-2 text-xs" oninput="updateLiveState()">
+            </div>
+          </div>
+
+          <div class="grid grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1">Inquiry Email</label>
+              <input type="email" id="inp-comp-email" class="w-full border rounded-lg px-3 py-2 text-xs" oninput="updateLiveState()">
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1">Registered Domain</label>
+              <input type="text" id="inp-comp-domain" class="w-full border rounded-lg px-3 py-2 text-xs" oninput="updateLiveState()">
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Jurisdiction / Service Area</label>
+            <input type="text" id="inp-comp-address" class="w-full border rounded-lg px-3 py-2 text-xs" oninput="updateLiveState()">
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Advisory Operating Hours</label>
+            <input type="text" id="inp-comp-hours" class="w-full border rounded-lg px-3 py-2 text-xs" oninput="updateLiveState()">
+          </div>
+        </div>
+
+        <!-- 2. Hero & Stats Tab -->
+        <div id="tab-hero" class="tab-content hidden bg-white p-6 rounded-2xl shadow-sm border border-slate-200 space-y-4">
+          <h2 class="text-base font-bold text-slate-900 border-b pb-2">Hero Copy &amp; Trust Metrics</h2>
+
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Hero Notification Badge</label>
+            <input type="text" id="inp-hero-badge" class="w-full border rounded-lg px-3 py-2 text-xs" oninput="updateLiveState()">
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Main Headline</label>
+            <input type="text" id="inp-hero-headline" class="w-full border rounded-lg px-3 py-2 text-xs font-bold" oninput="updateLiveState()">
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Subheadline Copy</label>
+            <textarea id="inp-hero-subheadline" rows="3" class="w-full border rounded-lg px-3 py-2 text-xs" oninput="updateLiveState()"></textarea>
+          </div>
+        </div>
+
+        <!-- 3. Services Tab -->
+        <div id="tab-services" class="tab-content hidden bg-white p-6 rounded-2xl shadow-sm border border-slate-200 space-y-4">
+          <h2 class="text-base font-bold text-slate-900 border-b pb-2">The 6 Core Services</h2>
+          <p class="text-xs text-slate-500">Service descriptions, scopes, and target profiles are dynamically generated from content.json.</p>
+          <div id="services-form-container" class="space-y-4">
+            <!-- Dynamic fields -->
+          </div>
+        </div>
+
+        <!-- 4. Pricing Tab -->
+        <div id="tab-pricing" class="tab-content hidden bg-white p-6 rounded-2xl shadow-sm border border-slate-200 space-y-4">
+          <h2 class="text-base font-bold text-slate-900 border-b pb-2">Pricing Packages</h2>
+          <div id="pricing-form-container" class="space-y-4">
+            <!-- Dynamic pricing fields -->
+          </div>
+        </div>
+
+        <!-- 5. FAQs Tab -->
+        <div id="tab-faqs" class="tab-content hidden bg-white p-6 rounded-2xl shadow-sm border border-slate-200 space-y-4">
+          <h2 class="text-base font-bold text-slate-900 border-b pb-2">Frequently Asked Questions</h2>
+          <div id="faqs-form-container" class="space-y-4">
+            <!-- Dynamic faq fields -->
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Right JSON Live Preview & Actions -->
+      <div class="lg:col-span-5 space-y-6">
+        <div class="bg-slate-900 rounded-2xl p-6 text-white shadow-xl sticky top-24 border border-slate-800">
+          <div class="flex items-center justify-between pb-3 border-b border-slate-800">
+            <span class="text-xs font-mono font-bold text-emerald-400">data/content.json (Live Object)</span>
+            <button onclick="copyJsonToClipboard()" class="text-[0.7rem] bg-slate-800 hover:bg-slate-700 text-slate-200 px-2.5 py-1 rounded">
+              Copy JSON
+            </button>
+          </div>
+          <pre id="json-preview" class="text-[0.68rem] font-mono text-emerald-300 overflow-y-auto max-h-[500px] mt-4 p-3 bg-slate-950 rounded-xl leading-relaxed"></pre>
+          <div class="mt-4 pt-4 border-t border-slate-800 flex justify-between items-center text-xs">
+            <span class="text-slate-400">Valid JSON schema</span>
+            <button onclick="downloadJsonFile()" class="text-emerald-400 font-bold hover:underline">
+              Download File →
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <script>
+    let contentData = {};
+
+    document.addEventListener('DOMContentLoaded', async () => {
+      try {
+        const res = await fetch('../data/content.json');
+        contentData = await res.json();
+      } catch (e) {
+        console.warn('Fallback loading');
+        contentData = {
+          company: {
+            name: "Mohasib Financial Group, LLC",
+            phone: "[INSERT YOUR TELEPHONE NUMBER HERE]",
+            phoneDisplay: "(800) 555-MOHASIB",
+            phoneRaw: "+18005556642",
+            email: "info@mohasib.us",
+            domain: "www.mohasib.us",
+            address: "Serving Clients Nationwide Across All 50 U.S. States",
+            operatingHours: "Monday – Friday: 8:30 AM – 6:30 PM EST"
+          },
+          hero: {
+            badge: "✨ Premier Accounting, Tax & Advisory Firm • Serving Nationwide",
+            headline: "Financial Precision & Strategic Growth for Your Business",
+            subheadline: "Move beyond reactive record-keeping. Mohasib Financial Group delivers strategic bookkeeping, high-impact tax planning, automated payroll, and entity formation designed to protect your assets and accelerate cash flow."
+          }
+        };
+      }
+      populateForm();
+      renderJsonPreview();
+    });
+
+    function populateForm() {
+      if (contentData.company) {
+        document.getElementById('inp-comp-name').value = contentData.company.name || '';
+        document.getElementById('inp-comp-phone').value = contentData.company.phoneDisplay || contentData.company.phone || '';
+        document.getElementById('inp-comp-rawphone').value = contentData.company.phoneRaw || '';
+        document.getElementById('inp-comp-email').value = contentData.company.email || '';
+        document.getElementById('inp-comp-domain').value = contentData.company.domain || '';
+        document.getElementById('inp-comp-address').value = contentData.company.address || '';
+        document.getElementById('inp-comp-hours').value = contentData.company.operatingHours || '';
+      }
+
+      if (contentData.hero) {
+        document.getElementById('inp-hero-badge').value = contentData.hero.badge || '';
+        document.getElementById('inp-hero-headline').value = contentData.hero.headline || '';
+        document.getElementById('inp-hero-subheadline').value = contentData.hero.subheadline || '';
+      }
+
+      // Populate Services
+      const sContainer = document.getElementById('services-form-container');
+      if (sContainer && contentData.services) {
+        sContainer.innerHTML = contentData.services.map((s, idx) => `
+          <div class="p-3 bg-slate-50 border rounded-xl">
+            <span class="text-xs font-bold text-slate-500">Service 0${idx+1}:</span>
+            <input type="text" value="${s.title}" class="w-full border rounded px-2 py-1 text-xs font-bold mt-1" oninput="contentData.services[${idx}].title = this.value; renderJsonPreview();">
+            <textarea class="w-full border rounded px-2 py-1 text-xs mt-1" rows="2" oninput="contentData.services[${idx}].subtitle = this.value; renderJsonPreview();">${s.subtitle}</textarea>
+          </div>
+        `).join('');
+      }
+
+      // Populate Pricing
+      const pContainer = document.getElementById('pricing-form-container');
+      if (pContainer && contentData.pricing && contentData.pricing.packages) {
+        pContainer.innerHTML = contentData.pricing.packages.map((p, idx) => `
+          <div class="p-3 bg-slate-50 border rounded-xl flex items-center justify-between">
+            <div>
+              <p class="text-xs font-bold text-slate-800">${p.name}</p>
+              <p class="text-[0.68rem] text-slate-500">${p.tagline}</p>
+            </div>
+            <div class="flex items-center gap-1 font-bold text-xs">
+              <span>$</span>
+              <input type="number" value="${p.monthlyPrice}" class="w-16 border rounded px-1.5 py-0.5 text-right" oninput="contentData.pricing.packages[${idx}].monthlyPrice = Number(this.value); renderJsonPreview();">
+            </div>
+          </div>
+        `).join('');
+      }
+
+      // Populate FAQs
+      const fContainer = document.getElementById('faqs-form-container');
+      if (fContainer && contentData.faqs) {
+        fContainer.innerHTML = contentData.faqs.map((f, idx) => `
+          <div class="p-3 bg-slate-50 border rounded-xl">
+            <input type="text" value="${f.question}" class="w-full border rounded px-2 py-1 text-xs font-bold" oninput="contentData.faqs[${idx}].question = this.value; renderJsonPreview();">
+            <textarea class="w-full border rounded px-2 py-1 text-xs mt-1" rows="2" oninput="contentData.faqs[${idx}].answer = this.value; renderJsonPreview();">${f.answer}</textarea>
+          </div>
+        `).join('');
+      }
+    }
+
+    function updateLiveState() {
+      if (!contentData.company) contentData.company = {};
+      contentData.company.name = document.getElementById('inp-comp-name').value;
+      contentData.company.phoneDisplay = document.getElementById('inp-comp-phone').value;
+      contentData.company.phone = document.getElementById('inp-comp-phone').value;
+      contentData.company.phoneRaw = document.getElementById('inp-comp-rawphone').value;
+      contentData.company.email = document.getElementById('inp-comp-email').value;
+      contentData.company.domain = document.getElementById('inp-comp-domain').value;
+      contentData.company.address = document.getElementById('inp-comp-address').value;
+      contentData.company.operatingHours = document.getElementById('inp-comp-hours').value;
+
+      if (!contentData.hero) contentData.hero = {};
+      contentData.hero.badge = document.getElementById('inp-hero-badge').value;
+      contentData.hero.headline = document.getElementById('inp-hero-headline').value;
+      contentData.hero.subheadline = document.getElementById('inp-hero-subheadline').value;
+
+      renderJsonPreview();
+    }
+
+    function renderJsonPreview() {
+      document.getElementById('json-preview').textContent = JSON.stringify(contentData, null, 2);
+    }
+
+    function switchTab(tabId) {
+      document.querySelectorAll('.tab-content').forEach(c => c.classList.add('hidden'));
+      document.querySelectorAll('.tab-btn').forEach(b => {
+        b.classList.remove('active', 'bg-emerald-600', 'text-white');
+        b.classList.add('bg-slate-100', 'text-slate-700');
+      });
+      document.getElementById(`tab-${tabId}`).classList.remove('hidden');
+      const activeBtn = document.getElementById(`tab-btn-${tabId}`);
+      activeBtn.classList.add('active', 'bg-emerald-600', 'text-white');
+      activeBtn.classList.remove('bg-slate-100', 'text-slate-700');
+    }
+
+    function copyJsonToClipboard() {
+      navigator.clipboard.writeText(JSON.stringify(contentData, null, 2));
+      alert('Updated content.json copied to clipboard! Paste it directly into data/content.json.');
+    }
+
+    function downloadJsonFile() {
+      const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(contentData, null, 2));
+      const downloadAnchor = document.createElement('a');
+      downloadAnchor.setAttribute("href", dataStr);
+      downloadAnchor.setAttribute("download", "content.json");
+      document.body.appendChild(downloadAnchor);
+      downloadAnchor.click();
+      downloadAnchor.remove();
+    }
+  </script>
+</body>
+</html>

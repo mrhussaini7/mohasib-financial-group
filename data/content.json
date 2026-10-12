@@ -1,0 +1,359 @@
+{
+  "company": {
+    "name": "Mohasib Financial Group, LLC",
+    "shortName": "Mohasib Financial Group",
+    "legalName": "Mohasib Financial Group, LLC",
+    "domain": "www.mohasib.us",
+    "url": "https://www.mohasib.us",
+    "industry": "Accounting, Taxation, and Business Advisory Services",
+    "phone": "[INSERT YOUR TELEPHONE NUMBER HERE]",
+    "phoneDisplay": "(800) 555-MOHASIB",
+    "phoneRaw": "+18005556642",
+    "email": "info@mohasib.us",
+    "supportEmail": "clients@mohasib.us",
+    "address": "Serving Clients Nationwide Across All 50 U.S. States",
+    "headquarters": "United States",
+    "operatingHours": "Monday – Friday: 8:30 AM – 6:30 PM EST | Saturday: By Appointment",
+    "foundedYear": "2019"
+  },
+  "branding": {
+    "tagline": "Financial Precision & Strategic Growth for Your Business",
+    "subTagline": "Trusted CPAs, Tax Strategists, and Business Advisors Driving Your Financial Success.",
+    "accentColor": "#059669",
+    "darkColor": "#0f172a",
+    "trustBadges": [
+      {
+        "title": "IRS Enrolled & Compliant",
+        "description": "Adhering strictly to federal and 50-state Department of Revenue compliance standards"
+      },
+      {
+        "title": "Intuit QuickBooks Certified",
+        "description": "Certified ProAdvisors for clean, seamless cloud accounting setups"
+      },
+      {
+        "title": "Xero Gold Partner",
+        "description": "Advanced automated ledger reconciliation & real-time financial tracking"
+      },
+      {
+        "title": "256-Bit Bank-Level Encryption",
+        "description": "Client vault protected with enterprise-grade SSL and SOC-2 standard controls"
+      }
+    ]
+  },
+  "hero": {
+    "badge": "✨ Premier Accounting, Tax & Advisory Firm • Serving Nationwide",
+    "headline": "Financial Precision & Strategic Growth for Your Business",
+    "subheadline": "Move beyond reactive record-keeping. Mohasib Financial Group delivers strategic bookkeeping, high-impact tax planning, automated payroll, and entity formation designed to protect your assets and accelerate cash flow.",
+    "primaryCta": "Book a Free Consultation",
+    "secondaryCta": "Call Our Advisors",
+    "stats": [
+      {
+        "value": "$2.8M+",
+        "label": "Tax Savings Unlocked",
+        "detail": "For our business and executive clients in legal deductions"
+      },
+      {
+        "value": "99.8%",
+        "label": "Filing Accuracy Rate",
+        "detail": "Zero-defect audit defense and automated double-check ledger verification"
+      },
+      {
+        "value": "500+",
+        "label": "Entities Formed & Scaled",
+        "detail": "LLCs, S-Corporations, and C-Corporations structured nationwide"
+      },
+      {
+        "value": "< 24h",
+        "label": "Advisory Response Time",
+        "detail": "Dedicated financial advisors ready when strategic decisions arise"
+      }
+    ]
+  },
+  "services": [
+    {
+      "id": "bookkeeping",
+      "number": "01",
+      "badge": "Core Financial Foundation",
+      "title": "Bookkeeping & Controller Services",
+      "subtitle": "Monthly reconciliations, financial reporting, profit & loss tracking, accounts payable/receivable.",
+      "description": "Gain crystalline clarity into your company's fiscal pulse. Our team handles every monthly reconciliation, categorizes transactions with pinpoint accuracy, tracks accounts payable and receivable, and delivers actionable P&L reports so you never make blind decisions.",
+      "features": [
+        "Monthly and quarterly bank & credit card reconciliations",
+        "Comprehensive Profit & Loss (P&L), Balance Sheet, and Cash Flow statements",
+        "Accounts Payable (bill payment management) & Accounts Receivable invoicing",
+        "Monthly closing ledger packages delivered by the 10th of every month",
+        "Clean chart of accounts design in QuickBooks Online or Xero",
+        "Historical cleanup and catch-up bookkeeping for multi-year backlog"
+      ],
+      "deliverables": "Monthly Financial Package, Executive Dashboard, AP/AR Aging Schedules",
+      "idealFor": "Startups, small-to-midsize businesses, e-commerce, and professional service firms",
+      "icon": "book"
+    },
+    {
+      "id": "payroll",
+      "number": "02",
+      "badge": "Automated Workforce Operations",
+      "title": "Payroll Services & Compliance",
+      "subtitle": "Automated payroll processing, direct deposits, tax withholdings, and year-end 1099/W-2 preparation.",
+      "description": "Eliminate the headache and high penalty risk of payroll mistakes. We configure automated direct deposits, compute federal, state, and local withholdings, manage employee onboarding, and file timely quarterly payroll returns and year-end W-2 and 1099 forms.",
+      "features": [
+        "Flawless multi-state automated direct deposit payroll runs",
+        "Federal, state, and local payroll tax withholdings and timely remittals",
+        "Year-end W-2, W-3, 1099-NEC, and 1099-MISC generation and IRS e-filing",
+        "Employee self-service portals for paystubs and tax documents",
+        "Paid time off (PTO), worker's comp tracking, and retirement contribution integrations",
+        "Wage garnishment and contractor compliance tracking"
+      ],
+      "deliverables": "Payroll Journal, Tax Remittance Receipts, Year-End Compliance Filings",
+      "idealFor": "Businesses with 1 to 100+ W-2 employees or independent contractor teams",
+      "icon": "users"
+    },
+    {
+      "id": "business-taxes",
+      "number": "03",
+      "badge": "Proactive Wealth Retention",
+      "title": "Business & Corporate Tax Strategy",
+      "subtitle": "Comprehensive tax planning, federal & state tax filing, and compliance strategy.",
+      "description": "Taxes shouldn't be an annual surprise—they should be a year-round tactical advantage. We design forward-looking tax strategies for LLCs, Partnerships, S-Corps, and C-Corps that legally slash tax liabilities, calculate quarterly estimates, and ensure flawless multi-state compliance.",
+      "features": [
+        "Entity-level corporate tax returns (Form 1120, 1120-S, 1065)",
+        "Year-round proactive tax planning and quarterly estimate calculations",
+        "S-Corporation reasonable compensation analysis and dividend optimization",
+        "Depreciation optimization (Section 179 and Bonus Depreciation)",
+        "Pass-through Entity Tax (PTET) state tax deduction strategies",
+        "Multi-state nexus review and apportionment filing"
+      ],
+      "deliverables": "Complete Corporate Tax Returns, Multi-Year Tax Savings Roadmap, K-1 Statements",
+      "idealFor": "Operating LLCs, S-Corporations, Partnerships, and Growing C-Corps",
+      "icon": "calculator"
+    },
+    {
+      "id": "income-tax-prep",
+      "number": "04",
+      "badge": "Maximum Deduction Optimization",
+      "title": "Income Tax Return Preparation",
+      "subtitle": "Timely, accurate individual and corporate income tax filing with maximum deduction optimization.",
+      "description": "Get every single dollar of deductions you legally qualify for. From high-net-worth individuals, business owners, and real estate investors to freelance operators, we meticulously examine your income streams to eliminate overpayment and guarantee audit-proof accuracy.",
+      "features": [
+        "Individual federal and state income tax returns (Form 1040 and Schedules A, B, C, D, E)",
+        "K-1 passthrough income integration from partnerships and S-Corps",
+        "Real estate rental property depreciation, 1031 exchanges, and loss deductions",
+        "Stock options, RSUs, crypto capital gains, and investment tax reporting",
+        "Retirement deduction maximization (SEP-IRA, Solo 401(k), Backdoor Roth)",
+        "Free electronic filing (e-file) with instant IRS and state tracking receipts"
+      ],
+      "deliverables": "Federal & State Tax Packet, Deductions Audit Defense Summary, Next-Year Vouchers",
+      "idealFor": "Business owners, high-earning professionals, freelancers, and real estate owners",
+      "icon": "file-check"
+    },
+    {
+      "id": "entity-formation",
+      "number": "05",
+      "badge": "Legal & Corporate Structuring",
+      "title": "Business Registration & Entity Formation",
+      "subtitle": "Helping entrepreneurs form LLCs, Corporations, S-Corps, obtaining EINs, and business licensing.",
+      "description": "Launch your new enterprise on rock-solid legal and tax foundations. We guide you through selecting the optimal entity type, file your Articles of Organization, acquire your Federal EIN, draft bespoke Operating Agreements, and secure required local and state business permits.",
+      "features": [
+        "State registration for Limited Liability Companies (LLC), C-Corps, and S-Corp elections (Form 2553)",
+        "Fast-track Federal Employer Identification Number (EIN) acquisition from the IRS",
+        "Customized Operating Agreements, Corporate Bylaws, and Initial Meeting Minutes",
+        "Registered Agent service coordination in all 50 states",
+        "State Department of Revenue and Sales Tax permit registrations",
+        "FinCEN Beneficial Ownership Information (BOI) mandatory compliance filing"
+      ],
+      "deliverables": "Corporate Formation Binder, Certified Articles, IRS EIN Letter, BOI Confirmation",
+      "idealFor": "New entrepreneurs, solopreneurs, expanding ventures, and restructured businesses",
+      "icon": "award"
+    },
+    {
+      "id": "consulting",
+      "number": "06",
+      "badge": "Executive Strategic Guidance",
+      "title": "Business Consulting & Advisory",
+      "subtitle": "Strategic growth planning, cash flow forecasting, budgeting, and financial health audits.",
+      "description": "Elevate your business with the strategic guidance of an executive Fractional CFO. We translate raw ledger data into high-level strategic intelligence: building rolling 12-month cash forecasts, benchmark financial audits, margin optimization, and capital allocation models.",
+      "features": [
+        "Fractional CFO & financial controller strategic advisory",
+        "Rolling 13-week and 12-month cash flow forecasting and liquidity management",
+        "Annual budgeting, variance analysis, and Key Performance Indicator (KPI) dashboards",
+        "Comprehensive financial health audits to identify leakage and redundant expenses",
+        "M&A financial due diligence and transaction readiness advisory",
+        "Bank loan, line of credit, and SBA financing packaging and presentation"
+      ],
+      "deliverables": "Executive KPI Dashboard, 12-Month Pro-Forma Forecast, Growth Strategy Blueprint",
+      "idealFor": "Businesses generating $250k - $15M seeking scalable expansion and profit control",
+      "icon": "trending-up"
+    }
+  ],
+  "calculator": {
+    "title": "Interactive Tax & Payroll Savings Estimator",
+    "subtitle": "Simulate your estimated tax savings and payroll cost efficiencies in seconds with our dynamic financial calculator.",
+    "taxDefaults": {
+      "revenue": 250000,
+      "expenses": 90000,
+      "entityType": "LLC",
+      "ownerSalary": 75000
+    },
+    "payrollDefaults": {
+      "employees": 8,
+      "payFrequency": "biweekly",
+      "avgHourlyRate": 30
+    }
+  },
+  "pricing": {
+    "title": "Transparent, Modular Financial Packages",
+    "subtitle": "No hidden hourly surprises. Fixed monthly tiers or custom modular selections tailored to your exact business size.",
+    "packages": [
+      {
+        "id": "starter",
+        "name": "Starter Compliance",
+        "tagline": "For solopreneurs, freelancers, and early-stage LLCs needing clean books and tax protection.",
+        "monthlyPrice": 395,
+        "billedPeriod": "per month",
+        "popular": false,
+        "features": [
+          "Monthly bookkeeping (up to 75 transactions)",
+          "Bank & credit card reconciliation (2 accounts)",
+          "Quarterly balance sheet & P&L statements",
+          "Annual business tax return (1065 / 1120-S)",
+          "Annual 1040 owner personal tax filing",
+          "Year-round email support (24h response time)"
+        ],
+        "ctaText": "Select Starter Plan"
+      },
+      {
+        "id": "growth",
+        "name": "Growth Accelerator",
+        "tagline": "For thriving businesses needing proactive tax strategy, full payroll, and monthly advisory.",
+        "monthlyPrice": 850,
+        "billedPeriod": "per month",
+        "popular": true,
+        "badge": "Most Popular Choice",
+        "features": [
+          "Comprehensive monthly bookkeeping (up to 250 transactions)",
+          "Automated payroll for up to 10 employees / contractors",
+          "Bi-monthly AP/AR oversight & invoice reconciliation",
+          "Proactive quarterly tax planning sessions & estimated tax filings",
+          "Federal & state business returns + multi-state filings",
+          "Dedicated Senior Bookkeeper & Tax Strategist",
+          "Quarterly strategic 60-min financial review meeting"
+        ],
+        "ctaText": "Select Growth Plan"
+      },
+      {
+        "id": "enterprise",
+        "name": "Fractional CFO & Enterprise",
+        "tagline": "Full-service financial department for established firms seeking high-growth advisory.",
+        "monthlyPrice": 1650,
+        "billedPeriod": "per month",
+        "popular": false,
+        "features": [
+          "Full-cycle bookkeeping & controller review (unlimited transactions)",
+          "Complete multi-state payroll & benefits deduction tracking",
+          "Cash flow forecasting & custom KPI executive dashboard",
+          "Deep tax optimization (R&D tax credits, PTET, depreciation schedules)",
+          "FinCEN BOI filings & ongoing state corporate compliance",
+          "Fractional CFO monthly board-level advisory sessions",
+          "Priority on-demand phone & private Slack/portal access"
+        ],
+        "ctaText": "Select Enterprise Plan"
+      }
+    ],
+    "addons": [
+      { "name": "LLC / S-Corp Entity Formation", "price": 495, "type": "one-time" },
+      { "name": "Multi-Year Historical Bookkeeping Cleanup", "price": 750, "type": "starting at" },
+      { "name": "FinCEN BOI Compliance Filing", "price": 199, "type": "one-time" },
+      { "name": "Comprehensive Financial Health Audit", "price": 600, "type": "one-time" }
+    ]
+  },
+  "portal": {
+    "title": "Mohasib Vault™ Client Portal",
+    "subtitle": "Secure, 256-bit encrypted access to your tax returns, financial statements, and real-time ledger records.",
+    "features": [
+      "Instant drag-and-drop tax document and receipt uploads",
+      "Download certified copies of filed federal and state returns",
+      "Real-time visibility into monthly P&L and balance sheet statements",
+      "Direct encrypted messaging with your designated Senior Accountant",
+      "Electronic e-signature integration for Form 8879 and corporate filings"
+    ]
+  },
+  "testimonials": [
+    {
+      "name": "Marcus Vance",
+      "role": "Founder & Managing Director",
+      "company": "Vance Logistics Group",
+      "location": "Dallas, TX",
+      "quote": "Switching our corporate accounting and payroll to Mohasib Financial Group was the best operational decision we made. In our first year, their S-Corp tax strategy saved our company $34,200 in self-employment taxes, and our books are closed like clockwork by the 8th of each month.",
+      "rating": 5,
+      "metric": "$34,200 Tax Saved"
+    },
+    {
+      "name": "Dr. Elena Rostova",
+      "role": "Principal Physician & Owner",
+      "company": "Apex Medical Aesthetics",
+      "location": "Alexandria, VA",
+      "quote": "Before Mohasib, our taxes were a stressful nightmare of chaotic receipts and missed quarterly dates. Their team restructured our LLC, organized our bookkeeping into QuickBooks, and automated our staff payroll. Now I can focus 100% on patients knowing our finances are bulletproof.",
+      "rating": 5,
+      "metric": "100% Automated Payroll"
+    },
+    {
+      "name": "David Sterling",
+      "role": "CEO & Co-Founder",
+      "company": "Sterling SaaS Solutions",
+      "location": "Denver, CO",
+      "quote": "Their advisory service is extraordinary. We used their cash flow modeling to secure a $500,000 credit facility with our bank. The team is hyper-responsive, extremely knowledgeable on tech business deductions, and treats our business like their own.",
+      "rating": 5,
+      "metric": "$500k Secured Credit"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "What is the difference between an LLC and an S-Corporation, and which is right for me?",
+      "answer": "An LLC is a flexible state-level legal entity providing personal liability protection. An S-Corporation is a tax status elected with the IRS (via Form 2553) that can apply to your LLC. Once your business net profit surpasses approximately $60,000–$80,000 per year, an S-Corp election can save thousands of dollars annually by splitting income into a reasonable W-2 salary and distributions—avoiding self-employment taxes (15.3%) on the distribution portion. Mohasib Financial Group models your exact profit and handles the complete formation and election process."
+    },
+    {
+      "question": "How quickly can you get our business onboarded and catch up on overdue books?",
+      "answer": "Standard onboarding takes 3 to 5 business days. We connect to your bank feeds (read-only) and existing accounting software with zero disruption to your daily operations. If you are months or years behind on bookkeeping or tax filings, our team specializes in historical catch-up reconciliation to get your books compliant, reconciled, and ready for taxes within 10 to 14 business days."
+    },
+    {
+      "question": "What tax deadlines should my business keep on its radar?",
+      "answer": "Key federal business deadlines include: March 15 for S-Corporations (Form 1120-S) and Partnerships (Form 1065); April 15 for C-Corporations (Form 1120) and Individual 1040 returns; and quarterly estimated tax deadlines on April 15, June 15, September 15, and January 15. When you work with Mohasib Financial Group, we monitor all 50-state and federal calendars and prepare estimated vouchers well in advance so penalties never hit your cash reserves."
+    },
+    {
+      "question": "How do you handle client data security and confidential tax documents?",
+      "answer": "We enforce bank-grade security protocols. Every document, tax return, and payroll record is stored in our proprietary Mohasib Vault™ secured with 256-bit AES encryption, two-factor authentication (2FA), and strict access controls compliant with IRS Publication 4557 guidelines for safeguarding taxpayer data."
+    },
+    {
+      "question": "Do I have to switch from my current accounting software?",
+      "answer": "No. While we recommend and are certified in QuickBooks Online and Xero for maximum efficiency, we seamlessly integrate with your existing platforms, credit card processors (Stripe, Square, PayPal), and inventory systems to minimize migration friction."
+    },
+    {
+      "question": "What is required for the new FinCEN Beneficial Ownership Information (BOI) filing?",
+      "answer": "Under the Corporate Transparency Act, most domestic LLCs and corporations formed in the U.S. must submit a Beneficial Ownership Information report to FinCEN identifying individuals who own at least 25% or have substantial operational control. Failure to file can carry severe civil penalties. Mohasib Financial Group prepares and e-files your BOI reporting accurately and securely."
+    },
+    {
+      "question": "How does your pricing work, and are there hidden fees?",
+      "answer": "We believe in 100% price transparency. Our services operate on fixed monthly or flat-project rates established upfront in our engagement agreement. You will never receive an unexpected bill for a quick phone call, email question, or standard ledger reconciliation."
+    },
+    {
+      "question": "Can Mohasib Financial Group handle multi-state businesses?",
+      "answer": "Yes. We advise clients with operations, remote employees, and sales tax nexus across all 50 U.S. states. We manage state payroll withholdings, state corporate income tax apportionment, and local annual report filings."
+    }
+  ],
+  "contact": {
+    "heading": "Let's Engineer Your Company's Financial Growth",
+    "subheading": "Schedule a complimentary 30-minute discovery consultation with our senior tax and accounting advisors to review your books, tax posture, and entity structure.",
+    "phoneLabel": "Direct Line",
+    "phone": "[INSERT YOUR TELEPHONE NUMBER HERE]",
+    "phoneTel": "tel:+18005556642",
+    "email": "contact@mohasib.us",
+    "hours": "Mon - Fri: 8:30 AM - 6:30 PM EST",
+    "officeLocations": "Headquartered in the United States • Nationwide Virtual & In-Person Practice"
+  },
+  "metadata": {
+    "siteTitle": "Mohasib Financial Group, LLC | Accounting, Taxes & Business Advisory",
+    "siteDescription": "Premier accounting, bookkeeping, automated payroll, business tax preparation, and entity formation for growing businesses. Serving clients nationwide at www.mohasib.us.",
+    "keywords": "Mohasib Financial Group, accounting services, business tax preparation, bookkeeping, corporate tax advisor, LLC registration, payroll services, S-Corp tax planning, fractional CFO, www.mohasib.us",
+    "canonical": "https://www.mohasib.us"
+  }
+}
